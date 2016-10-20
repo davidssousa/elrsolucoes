@@ -4,11 +4,15 @@
 <html lang="pt-BR">
 	<!--<![endif]-->
 
+<!--///// head     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 	<head>
 		<meta charset="utf-8">
-		<title>Consultoria especializada em soluções tecnologicas | Quem Somos</title>
-		<meta name="description" content="Consultoria especializada em soluções tecnologicas, ELRSoluções">
+		<title>Consultoria especializada em soluções tecnologicas | ELRSoluções</title>
+		<meta name="description" content="Consultoria especializada em sistemas ERP">
+		
+		<meta name="keywords" content="consultoria, ERP" />
 
+		<link rel="canonical" href="http://www.elrsolucoes.com.br" />
 
 		<!-- Mobile Meta -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -47,31 +51,17 @@
 		<!-- Custom css --> 
 		<link href="css/custom.css" rel="stylesheet">
 	</head>
+<!--///// head end ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 
-	<!-- body classes:  -->
-	<!-- "boxed": boxed layout mode e.g. <body class="boxed"> -->
-	<!-- "pattern-1 ... pattern-9": background patterns for boxed layout mode e.g. <body class="boxed pattern-1"> -->
-	<!-- "transparent-header": makes the header transparent and pulls the banner to top -->
-	<!-- "gradient-background-header": applies gradient background to header -->
-	<!-- "page-loader-1 ... page-loader-6": add a page loader to the page (more info @components-page-loaders.html) -->
 	<body class="no-trans front-page transparent-header  ">
 
-		<!-- scrollToTop -->
-		<!-- ================ -->
+<!--///// cabecalho       ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 		<div class="scrollToTop circle"><i class="icon-up-open-big"></i></div>
 		
-		<!-- page wrapper start -->
-		<!-- ================ -->
 		<div class="page-wrapper">
 		
-			<!-- header-container start -->
 			<div class="header-container">
 				
-				<!-- header-top start -->
-				<!-- classes:  -->
-				<!-- "dark": dark version of header top e.g. class="header-top dark" -->
-				<!-- "colored": colored version of header top e.g. class="header-top colored" -->
-				<!-- ================ -->
 				<div class="header-top dark ">
 					<div class="container">
 						<div class="row">
@@ -120,12 +110,15 @@
 
 									<!-- header top dropdowns start -->
 									<!-- ================ -->
-									<div class="header-top-dropdown text-right">
+									<div class="header-top-dropdown">
 										<div class="btn-group">
-											<a href="cadastro.html" class="btn btn-default btn-sm"><i class="fa fa-user pr-10"></i> Inscreva-se</a>
+											<a href="cadastro.html" class="btn btn-default btn-sm"><i class="fa fa-user pr-10"></i>Inscreva</a>
 										</div>
 										<div class="btn-group">
-											<a href="login.html" class="btn btn-default btn-sm"><i class="fa fa-user pr-10"></i> Entrar</a>
+											<a href="login.html" class="btn btn-default btn-sm"><i class="fa fa-user pr-9"></i> Entrar</a>
+										</div>
+										<div class="btn-group">
+											<a href="breve.html" class="btn btn-default btn-sm"><i class="fa fa-cart-arrow-down pr-10"></i>Loja</a>
 										</div>
 										
 										<!-- 2º opção
@@ -172,15 +165,9 @@
 						</div>
 					</div>
 				</div>
-				<!-- header-top end -->
+<!--///// cabecalho  end  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 				
-				<!-- header start -->
-				<!-- classes:  -->
-				<!-- "fixed": enables fixed navigation mode (sticky menu) e.g. class="header fixed clearfix" -->
-				<!-- "dark": dark version of header e.g. class="header dark clearfix" -->
-				<!-- "full-width": mandatory class for the full-width menu layout -->
-				<!-- "centered": mandatory class for the centered logo layout -->
-				<!-- ================ --> 
+<!--///// navbar       ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 				<header class="header  fixed    clearfix">
 					
 					<div class="container">
@@ -206,8 +193,46 @@
 											</ul>
 										</div>
 										<div class="btn-group dropdown">
-											<button onclick="window.location='http://www.elrsolucoes.com.br/breve.html';" type="button" class="btn dropdown-toggle"><i class="icon-basket-1"></i></button>
 											
+											<button onclick="window.location='http://www.elrsolucoes.com.br/breve.html';" type="button" class="btn dropdown-toggle"><i class="icon-basket-1"></i></button>
+											<ul class="dropdown-menu dropdown-menu-right dropdown-animation cart">
+												<li>
+													<table class="table table-hover">
+														<thead>
+															<tr>
+																<th class="quantity">Qtde</th>
+																<th class="product">Produto</th>
+																<th class="amount">Subtotal</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td class="quantity">1 x</td>
+																<td class="product"><a href="breve.html"> s</a><span class="small">Faturamento</span></td>
+																<td class="amount">R$ 2.000,00</td>
+															</tr>
+															<tr>
+																<td class="quantity">1 x</td>
+																<td class="product"><a href="breve.html">Customização em ERP</a><span class="small">Pedido de Venda Integrado</span></td>
+																<td class="amount">R$ 3.000,00</td>
+															</tr>
+															<tr>
+																<td class="quantity">1 x</td>
+																<td class="product"><a href="breve.html">Desenvolvimento Web para ERP SAP <span class="small">E-Comerce integrado com Faturamento</span></td>
+																<td class="amount">R$ 2.500,00</td>
+															</tr>
+															<tr>
+																<td class="total-quantity" colspan="2">Total 1 Items</td>
+																<td class="total-amount">R$ 7.500,00</td>
+															</tr>
+														</tbody>
+													</table>
+													<div class="panel-body text-right">
+														<a href="breve.html" class="btn btn-group btn-gray btn-sm">Forma Pagamento</a>
+														<a href="breve.html" class="btn btn-group btn-gray btn-sm">Finalizar Pedido</a>
+													</div>
+												</li>
+											</ul>
 										</div>
 									</div>
 									<!-- header dropdown buttons end-->
@@ -215,6 +240,7 @@
 									<!-- logo -->
 									<div id="logo" class="logo">
 										<a href="index.html"><h4><span class="logo-font text-default">ELR</span><span class="logo-font elrs">Soluções</span></h4></a>
+
 									</div>
 
 									<!-- name-and-slogan -->
@@ -232,11 +258,6 @@
 								<!-- ================ -->
 								<div class="header-right clearfix">
 									
-								<!-- main-navigation start -->
-								<!-- classes: -->
-								<!-- "onclick": Makes the dropdowns open on click, this the default bootstrap behavior e.g. class="main-navigation onclick" -->
-								<!-- "animated": Enables animations on dropdowns opening e.g. class="main-navigation animated" -->
-								<!-- "with-dropdown-buttons": Mandatory class that adds extra space, to the main navigation, for the search and cart dropdowns -->
 								<!-- ================ -->
 								<div class="main-navigation  animated with-dropdown-buttons">
 
@@ -266,24 +287,23 @@
 													</li>
 													<li>
 														<a href="quem-somos.html">Quem Somos</a>
+													</li>	
+													<li>
+														<a href="solucoes.html">Soluções</a>
+													</li>
+													<li>
+														<a href="clientes.html">Clientes</a>
 													</li>
 													<li class="dropdown">
-														<a href="#" class="dropdown-toggle" data-toggle="dropdown">Nossas Soluções</a>
+														<a href="#" class="dropdown-toggle" data-toggle="dropdown">Trabalhe Conosco</a>
 														<ul class="dropdown-menu">
-															<li ><a href="solucoes.html">Soluções</a></li>
+															<li ><a href="recrutamento.html">Recrutamento</a></li>
 															<li ><a href="equipe.html">Nossa Equipe</a></li>
 														</ul>
 													</li>	
 													<li>
-														<a href="clientes.html">Quem Atendemos</a>
-													</li>												
-													<li class="dropdown">
-														<a href="#" class="dropdown-toggle" data-toggle="dropdown">Fale Conosco</a>
-														<ul class="dropdown-menu">
-															<li ><a href="contato.html">Contato</a></li>
-															
-														</ul>
-													</li>
+														<a href="contato.html">Contato</a>
+													</li>	
 												</ul>
 												<!-- main-menu end -->
 												
@@ -303,8 +323,10 @@
 														</ul>
 													</div>
 													<div class="btn-group dropdown">
+														<!-- <button type="button" class="btn dropdown-toggle" data-toggle="dropdown"><i class="icon-search"></i></button> -->
+
 														<button onclick="window.location='http://www.elrsolucoes.com.br/breve.html';" type="button" class="btn dropdown-toggle"><i class="icon-basket-1"></i></button>
-													
+														
 													</div>
 												</div>
 												<!-- header dropdown buttons end-->
@@ -325,10 +347,10 @@
 					</div>
 					
 				</header>
-				<!-- header end -->
 			</div>
-			<!-- header-container end -->
-		
+<!--///// navbar  end  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+
 			<!-- banner start -->
 			<!-- ================ -->
 			<div class="banner dark-translucent-bg" style="background-image:url('images/page-about-banner-1.jpg'); background-position: 50% 27%;">
@@ -710,9 +732,8 @@
 			</section>
 			<!-- section end -->
 			
-			<!-- section end -->
-			<!-- footer start (Add "dark" class to #footer in order to enable dark footer) -->
-			<!-- ================ -->
+			
+<!--/////  foooter       ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 			<footer id="footer" class="clearfix ">
 
 				<!-- .footer start -->
@@ -735,7 +756,8 @@
 												<li><a href="home.html">Home</a></li>
 												<li><a href="quem-somos.html">Quem Somos</a></li>
 												<li><a href="solucoes.html">Soluções</a></li>
-												<li><a href="quem-somos.html">Quem Atendemos</a></li>
+												<li><a href="clientes.html">Quem Atendemos</a></li>
+												<li><a href="recrutamento.html">Trabalhe Conosco</a></li>
 											</ul>
 										</nav>
 									</div>
@@ -807,7 +829,7 @@
 										<div class="row grid-space-10">
 											<div class="col-xs-4 col-md-6">
 												<div class="overlay-container mb-10">
-													<img src="images/clientes/cliente-1.jpg" alt="">
+													<img src="images/clientes/small/cliente-1.jpg" alt="">
 													<a href="clientes.html" class="overlay-link small">
 														<i class="fa fa-link"></i>
 													</a>
@@ -815,7 +837,15 @@
 											</div>
 											<div class="col-xs-4 col-md-6">
 												<div class="overlay-container mb-10">
-													<img src="images/clientes/cliente-2.jpg" alt="">
+													<img src="images/clientes/small/cliente-2.jpg" alt="">
+													<a href="solucoes.html" class="overlay-link small">
+														<i class="fa fa-link"></i>
+													</a>
+												</div>
+											</div>
+											<div class="col-xs-4 col-md-6">
+												<div class="overlay-container mb-10">
+													<img src="images/clientes/small/cliente-3.jpg" alt="">
 													<a href="clientes.html" class="overlay-link small">
 														<i class="fa fa-link"></i>
 													</a>
@@ -823,7 +853,7 @@
 											</div>
 											<div class="col-xs-4 col-md-6">
 												<div class="overlay-container mb-10">
-													<img src="images/clientes/cliente-3.jpg" alt="">
+													<img src="images/clientes/small/cliente-4.jpg" alt="">
 													<a href="clientes.html" class="overlay-link small">
 														<i class="fa fa-link"></i>
 													</a>
@@ -831,7 +861,7 @@
 											</div>
 											<div class="col-xs-4 col-md-6">
 												<div class="overlay-container mb-10">
-													<img src="images/clientes/cliente-4.jpg" alt="">
+													<img src="images/clientes/small/cliente-5.jpg" alt="">
 													<a href="clientes.html" class="overlay-link small">
 														<i class="fa fa-link"></i>
 													</a>
@@ -839,15 +869,7 @@
 											</div>
 											<div class="col-xs-4 col-md-6">
 												<div class="overlay-container mb-10">
-													<img src="images/clientes/cliente-5.jpg" alt="">
-													<a href="clientes.html" class="overlay-link small">
-														<i class="fa fa-link"></i>
-													</a>
-												</div>
-											</div>
-											<div class="col-xs-4 col-md-6">
-												<div class="overlay-container mb-10">
-													<img src="images/clientes/cliente-6.jpg" alt="">
+													<img src="images/clientes/small/cliente-6.jpg" alt="">
 													<a href="clientes.html" class="overlay-link small">
 														<i class="fa fa-link"></i>
 													</a>
@@ -903,14 +925,11 @@
 				<!-- .subfooter end -->
 
 			</footer>
-			<!-- footer end -->
-			
-			
 		</div>
-		<!-- page-wrapper end -->
+<!--/////  foooter  end  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 
-		<!-- JavaScript files placed at the end of the document so the pages load faster -->
-		<!-- ================================================== -->
+
+<!--/////  scripts       ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 		<!-- Jquery and Bootstap core js files -->
 		<script type="text/javascript" src="plugins/jquery.min.js"></script>
 		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
@@ -942,6 +961,7 @@
 		<script type="text/javascript" src="js/template.js"></script>
 		<!-- Custom Scripts -->
 		<script type="text/javascript" src="js/custom.js"></script>
+<!--/////  scripts  end  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 
 	</body>
 </html>
